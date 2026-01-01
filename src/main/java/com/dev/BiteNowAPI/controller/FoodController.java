@@ -45,4 +45,9 @@ public class FoodController {
         return foodService.readFood(id);
     }
 
+    @DeleteMapping("/{id}")
+    public void deleteFood(@PathVariable String id) {
+      foodService.deleteFood(id);
+    }
+
 }
