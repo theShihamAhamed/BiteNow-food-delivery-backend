@@ -1,6 +1,8 @@
 package com.dev.BiteNowAPI.service;
 
+import com.dev.BiteNowAPI.io.CartResponse;
+
 public interface CartService {
 
-    void addToCart(String foodId);
+    CartResponse addToCart(String foodId);
 }

@@ -20,8 +20,4 @@ public class CartResponse {
     private String userId;
     private Map<String, Integer> items = new HashMap<>();
 
-    public CartResponse(String userId, Map<String, Integer> items) {
-        this.userId = userId;
-        this.items = items;
-    }
 }
