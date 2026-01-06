@@ -1,5 +1,6 @@
 package com.dev.BiteNowAPI.service;
 
+import com.dev.BiteNowAPI.io.CartRequest;
 import com.dev.BiteNowAPI.io.CartResponse;
 
 public interface CartService {
@@ -9,4 +10,6 @@ public interface CartService {
     CartResponse getCart();
 
     void clearCart();
+
+    CartResponse removeFromCart(CartRequest cartRequest);
 }
