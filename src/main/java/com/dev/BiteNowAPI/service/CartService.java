@@ -7,4 +7,6 @@ public interface CartService {
     CartResponse addToCart(String foodId);
 
     CartResponse getCart();
+
+    void clearCart();
 }

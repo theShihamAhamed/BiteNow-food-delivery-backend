@@ -31,4 +31,10 @@ public class CartController {
     public CartResponse getCart() {
         return cartService.getCart();
     }
+
+    @DeleteMapping
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void clearCart() {
+        cartService.clearCart();
+    }
 }
